@@ -146,6 +146,23 @@ Protects passwords, payments, personal data
 | Used for digital signature | Verify signature | Create signature |
 | Speed impact | Slower (asymmetric) | Slower but critical |
 
+# HTTP vs HTTPS
+| Feature | HTTP | HTTPS |
+|------|------|------|
+| Full form | HyperText Transfer Protocol | HyperText Transfer Protocol Secure |
+| Security | ❌ Not secure | ✅ Secure |
+| Data encryption | ❌ No encryption | ✅ Encrypted using SSL/TLS |
+| Data visibility | Plain text (readable) | Encrypted (unreadable) |
+| Protection from attackers | ❌ No | ✅ Yes |
+| Website authentication | ❌ No verification | ✅ Server identity verified |
+| URL prefix | http:// | https:// |
+| Browser indicator | ❌ No lock / "Not Secure" | 🔒 Lock icon |
+| Default port | 80 | 443 |
+| Risk of data theft | High | Very low |
+| Use case | Public or non-sensitive data | Login, payments, APIs |
+| SEO ranking | Lower | Higher (preferred by Google) |
+| Modern browser support | Limited / discouraged | Fully supported |
+
 
 
 
