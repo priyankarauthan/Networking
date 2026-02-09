@@ -1,5 +1,29 @@
 # Networking & Security
 
+```
+
+Browser / Client
+    |
+    | 1️⃣ Client Hello (supported ciphers)
+    v
+Server
+    |
+    | 2️⃣ Server Hello + Certificate (public key)
+    v
+Client
+    |
+    | 3️⃣ Verify certificate (CA check) - The client verifies a certificate by checking its signature, certificate chain, expiry, domain name, and trust against a known Certificate Authority (CA).
+    | 4️⃣ Generate session key
+    | 5️⃣ Encrypt session key using server public key
+    v
+Server
+    |
+    | 6️⃣ Decrypt using private key
+    |
+🔐 Secure encrypted communication starts
+```
+
+
 ### 🔹 Step 1: Browser says “Hello”
 
 Your browser sends:
